@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>کاوه IDE | دانلود نسخه لینوکس — کاوه تیم</title>
+  <meta name="description" content="کاوه IDE — آی‌دی‌ای اوپن‌سورس پایتون. بدون نیاز به نصب پایتون، داخلش کدنویسی کنید. نسخه لینوکس را از اینجا دانلود کنید.">
+  <meta name="keywords" content="کاوه IDE, kave IDE, IDE پایتون, دانلود IDE لینوکس, اوپن سورس">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ahwraaqwamy-creator.github.io/kave_team/kave-ide.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:url" content="https://ahwraaqwamy-creator.github.io/kave_team/kave-ide.html">
+  <meta property="og:title" content="کاوه IDE | دانلود نسخه لینوکس">
+  <meta property="og:description" content="آی‌دی‌ای اوپن‌سورس پایتون — بدون نیاز به نصب پایتون. نسخه لینوکس را دانلود کنید.">
+  <meta property="og:site_name" content="کاوه تیم">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">ک</span>
+        <span class="logo-text">کاوه تیم</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#about" class="nav-link">درباره ما</a>
+        <a href="index.html#team" class="nav-link">اعضا</a>
+        <a href="index.html#news" class="nav-link">اخبار</a>
+        <a href="index.html#projects" class="nav-link">پروژه‌ها</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>کاوه IDE</h1>
+        <p>آی‌دی‌ای اوپن‌سورس پایتون</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card download-box">
+          <h2 style="color: var(--accent); margin-bottom: 12px; font-size: 1.3rem;">توضیحات برنامه</h2>
+          <p style="color: var(--text-muted);">
+            این برنامه یک آی‌دی‌ای اوپن‌سورس پایتونه که بهتون این امکان رو می‌ده داخلش به زبان پایتون
+            کدنویسی کنید بدون اینکه نیاز به دانلود خود پایتون باشه. فعلاً فقط نسخه لینوکس منتشر شده.
+            زنده باد آزادی کاربر.
+          </p>
+          <a href="kave%20IDE" class="btn btn-primary" download>
+            دانلود نسخه لینوکس
+          </a>
+          <p style="margin-top: 16px; font-size: 0.85rem; color: var(--text-muted); opacity: 0.8;">
+            نسخه لینوکس با پایتون ۳.۱۳
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark small">ک</span>
+        <span>کاوه تیم</span>
+      </div>
+      <p class="footer-copy">
+        © <span id="year"></span> کاوه تیم. تمامی حقوق محفوظ است.
+      </p>
+      <p class="footer-note">ساخته‌شده با عشق برای جامعه نرم‌افزاری ایران</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
