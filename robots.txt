@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahwraaqwamy-creator.github.io/kave_team/sitemap.xml
+Sitemap: https://ahwraaqwamy-creator.github.io/kave_team_org/sitemap.xml
